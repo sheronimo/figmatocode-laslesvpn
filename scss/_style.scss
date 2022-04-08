@@ -4,3 +4,29 @@ body {
 	font-weight: $fw-400;
 	line-height: 1.875rem;
 }
+
+// Navbar
+.navbar {
+	padding-block: 2.8125rem;
+	line-height: 1.185rem;
+
+	.navbar-container {
+		@include flex($justify: space-between);
+
+		.nav-menu {
+			@include flex;
+			gap: 2.5rem;
+			color: $clr-neutral-300;
+		}
+
+		.signin {
+			font-weight: $fw-500;
+		}
+
+		.signup {
+			padding-inline: 2.8125rem;
+			border-width: 1px;
+			margin-left: 1.875rem;
+		}
+	}
+}

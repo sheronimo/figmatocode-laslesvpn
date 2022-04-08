@@ -3,3 +3,34 @@
 	margin: 0 auto;
 	padding-inline: 2rem;
 }
+
+// Buttons
+.btn {
+	font-weight: $fw-500;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 1.185rem;
+	padding-inline: 3.93375rem;
+	padding-block: 0.8125rem;
+}
+
+.btn-primary {
+	color: $clr-neutral-1000;
+	background-color: $clr-secondary;
+	border-radius: 3.125rem;
+}
+
+.btn-outline {
+	color: $clr-secondary;
+	background-color: transparent;
+	border: 2px solid $clr-secondary;
+	border-radius: 3.125rem;
+}
+
+.btn-rectangle {
+	color: $clr-neutral-1000;
+	background-color: $clr-secondary;
+	padding-inline: 4.84375rem;
+	padding-block: 1.09375rem;
+	border-radius: 0.625rem;
+}

@@ -22,9 +22,39 @@ ul {
 }
 
 .container {
-  max-width: 68.75rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding-inline: 2rem;
+}
+
+.btn {
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.185rem;
+  padding-inline: 3.93375rem;
+  padding-block: 0.8125rem;
+}
+
+.btn-primary {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 90%, 59%);
+  border-radius: 3.125rem;
+}
+
+.btn-outline {
+  color: hsl(0deg, 90%, 59%);
+  background-color: transparent;
+  border: 2px solid hsl(0deg, 90%, 59%);
+  border-radius: 3.125rem;
+}
+
+.btn-rectangle {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 90%, 59%);
+  padding-inline: 4.84375rem;
+  padding-block: 1.09375rem;
+  border-radius: 0.625rem;
 }
 
 body {
@@ -32,4 +62,29 @@ body {
   color: hsl(225deg, 58%, 10%);
   font-weight: 400;
   line-height: 1.875rem;
+}
+
+.navbar {
+  padding-block: 2.8125rem;
+  line-height: 1.185rem;
+}
+.navbar .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-container .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  color: hsl(221deg, 12%, 35%);
+}
+.navbar .navbar-container .signin {
+  font-weight: 500;
+}
+.navbar .navbar-container .signup {
+  padding-inline: 2.8125rem;
+  border-width: 1px;
+  margin-left: 1.875rem;
 }/*# sourceMappingURL=main.css.map */
