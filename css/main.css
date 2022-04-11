@@ -125,4 +125,37 @@ h6 {
 }
 .hero-container .hero-text .lead {
   margin-bottom: 3.125rem;
+}
+
+.stats {
+  margin-top: 6.4375rem;
+}
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+}
+.stats-container .stat {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.28125rem;
+  padding-block: 2.3125rem;
+}
+.stats-container .stat:nth-child(2) {
+  border-left: 2px solid hsl(225deg, 13%, 94%);
+  border-right: 2px solid hsl(225deg, 13%, 94%);
+}
+.stats-container .stat .stat-text .stat-num {
+  font-weight: 700;
+  font-size: 1.5625rem;
+  margin-bottom: 0.3125rem;
+}
+.stats-container .stat .stat-text .stat-text {
+  font-size: 1.25rem;
+  color: hsl(221deg, 12%, 35%);
 }/*# sourceMappingURL=main.css.map */

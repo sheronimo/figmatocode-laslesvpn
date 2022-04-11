@@ -65,3 +65,39 @@ h6 {
 		}
 	}
 }
+
+// Stats
+.stats {
+	margin-top: 6.4375rem;
+
+	&-container {
+		@include grid(3);
+		border-radius: 0.625rem;
+
+		.stat {
+			width: 100%;
+			margin: 0 auto;
+			@include flex;
+			gap: 2.28125rem;
+			padding-block: 2.3125rem;
+
+			&:nth-child(2) {
+				border-left: 2px solid hsl(225, 13%, 94%);
+				border-right: 2px solid hsl(225, 13%, 94%);
+			}
+
+			.stat-text {
+				.stat-num {
+					font-weight: $fw-700;
+					font-size: 1.5625rem;
+					margin-bottom: 0.3125rem;
+				}
+
+				.stat-text {
+					font-size: 1.25rem;
+					color: $clr-neutral-300;
+				}
+			}
+		}
+	}
+}
