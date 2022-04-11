@@ -34,3 +34,12 @@
 	padding-block: 1.09375rem;
 	border-radius: 0.625rem;
 }
+
+// Text
+.lead {
+	color: $clr-neutral-300;
+
+	.bold {
+		font-weight: $fw-500;
+	}
+}
