@@ -76,7 +76,6 @@ h6 {
 
 		.stat {
 			width: 100%;
-			margin: 0 auto;
 			@include flex;
 			gap: 2.28125rem;
 			padding-block: 2.3125rem;
@@ -96,6 +95,43 @@ h6 {
 				.stat-text {
 					font-size: 1.25rem;
 					color: $clr-neutral-300;
+				}
+			}
+		}
+	}
+}
+
+.features {
+	margin-top: 6.75rem;
+
+	&-container {
+		@include grid(2);
+		grid-gap: 3rem;
+
+		.features-img {
+			padding: 2.25rem;
+		}
+
+		.features-text {
+			max-width: 57ch;
+			justify-self: end;
+
+			.m-heading {
+				max-width: 16ch;
+			}
+
+			.lead {
+				margin-bottom: 1.25rem;
+			}
+
+			.feature {
+				@include flex($justify: flex-start);
+				gap: 0.75rem;
+				color: $clr-neutral-300;
+				font-size: 0.875rem;
+
+				:not(last-child) {
+					margin-bottom: 0.9375rem;
 				}
 			}
 		}
