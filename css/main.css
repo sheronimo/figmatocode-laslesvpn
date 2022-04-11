@@ -57,6 +57,10 @@ ul {
   border-radius: 0.625rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .lead {
   color: hsl(221deg, 12%, 35%);
 }
