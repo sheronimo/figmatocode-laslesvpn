@@ -258,4 +258,9 @@ h6 {
 }
 .plans .plan-items .plan-active {
   border-color: hsl(0deg, 90%, 59%);
+}
+
+.network .globe {
+  margin-inline: auto;
+  margin-top: 9.75rem;
 }/*# sourceMappingURL=main.css.map */
