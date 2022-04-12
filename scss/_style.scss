@@ -124,17 +124,71 @@ h6 {
 			.lead {
 				margin-bottom: 1.25rem;
 			}
+		}
+	}
+}
 
-			.feature {
-				@include flex($justify: flex-start);
-				gap: 0.75rem;
-				color: $clr-neutral-300;
-				font-size: 0.875rem;
+.gradient-wrapper {
+	background: linear-gradient(
+		0deg,
+		hsla(0, 0%, 97%, 0) 0%,
+		hsl(0, 0%, 97%) 100%
+	);
+}
+
+// Plans
+.plans {
+	padding-block: 5rem;
+
+	.plan-items {
+		@include grid(3, $align: start);
+		grid-gap: 3.125rem;
+		margin-top: 3.75rem;
+
+		.plan {
+			height: 47.5rem;
+			width: 100%;
+			background-color: $clr-neutral-1000;
+			border: 2px solid $clr-neutral-800;
+			border-radius: 10px;
+			padding: 3.125rem;
+			@include flex($justify: flex-start);
+			flex-direction: column;
+
+			.plan-img {
+				margin-block: 1.875rem;
+			}
+
+			.plan-heading {
+				font-size: 1.125rem;
+				margin-bottom: 1.875rem;
+			}
+
+			.checklist {
+				gap: 1.5625rem;
 
 				:not(last-child) {
-					margin-bottom: 0.9375rem;
+					margin-bottom: 0.625rem;
 				}
 			}
+
+			.plan-bottom {
+				margin-top: auto;
+
+				.price {
+					font-size: 1.5625rem;
+					font-weight: $fw-500;
+					margin-bottom: 1.25rem;
+
+					.month {
+						font-weight: $fw-400;
+					}
+				}
+			}
+		}
+
+		.plan-active {
+			border-color: $clr-secondary;
 		}
 	}
 }
