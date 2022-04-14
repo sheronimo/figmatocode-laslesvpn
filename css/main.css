@@ -263,4 +263,13 @@ h6 {
 .network .globe {
   margin-inline: auto;
   margin-top: 9.75rem;
+}
+
+.sponsors {
+  margin-top: 6.875rem;
+}
+.sponsors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
