@@ -280,7 +280,7 @@ h6 {
 }
 
 .testimonials {
-  margin-block: 7.75rem;
+  margin-top: 7.75rem;
   overflow-x: hidden;
 }
 .testimonials .testimonial-cards {
@@ -349,4 +349,14 @@ h6 {
 }
 .testimonials .slider-controls .slider-btn:first-child {
   margin-right: 1.25rem;
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.65625rem 4.375rem;
+}
+.subscribe-container .subscribe-text .m-heading {
+  max-width: 16ch;
 }/*# sourceMappingURL=main.css.map */

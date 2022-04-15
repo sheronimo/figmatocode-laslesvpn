@@ -205,7 +205,7 @@ h6 {
 
 // Testimonials
 .testimonials {
-	margin-block: 7.75rem;
+	margin-top: 7.75rem;
 	overflow-x: hidden;
 
 	.testimonial-cards {
@@ -273,6 +273,20 @@ h6 {
 
 			&:first-child {
 				margin-right: 1.25rem;
+			}
+		}
+	}
+}
+
+// Subscribe
+.subscribe {
+	&-container {
+		@include flex($justify: space-between);
+		padding: 3.65625rem 4.375rem;
+
+		.subscribe-text {
+			.m-heading {
+				max-width: 16ch;
 			}
 		}
 	}
