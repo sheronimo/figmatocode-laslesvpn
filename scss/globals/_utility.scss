@@ -43,15 +43,15 @@
 
 .lead {
 	color: $clr-neutral-300;
+	margin-top: 1.25rem;
+}
 
-	.bold {
-		font-weight: $fw-500;
-	}
+.bold {
+	font-weight: $fw-500;
 }
 
 .m-heading {
 	font-size: 2.1875rem;
-	margin-bottom: 1.25rem;
 	line-height: 3.125rem;
 }
 

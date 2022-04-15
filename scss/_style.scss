@@ -283,10 +283,69 @@ h6 {
 	&-container {
 		@include flex($justify: space-between);
 		padding: 3.65625rem 4.375rem;
+		background-color: $clr-neutral-1000;
+		transform: translateY(50%);
 
 		.subscribe-text {
 			.m-heading {
 				max-width: 16ch;
+			}
+		}
+	}
+}
+
+.footer {
+	background-color: $clr-neutral-900;
+	padding-block: 6.25rem;
+
+	&-container {
+		padding-top: 5rem;
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+		align-items: flex-start;
+		justify-items: flex-end;
+		grid-gap: 3rem;
+
+		*:first-child {
+			justify-self: flex-start;
+		}
+
+		.sns {
+			@include flex($justify: flex-start);
+			gap: 1.25rem;
+			margin-block: 1.875rem;
+
+			.sns-link {
+				@include flex;
+				display: inline-flex;
+				background-color: $clr-neutral-1000;
+				width: 2.1rem;
+				aspect-ratio: 1;
+				border-radius: 50%;
+
+				i {
+					color: $clr-secondary;
+				}
+			}
+		}
+
+		.copyright {
+			color: $clr-neutral-700;
+		}
+
+		.footer-heading {
+			font-weight: $fw-500;
+			font-size: 1.125rem;
+			margin-bottom: 1.25rem;
+		}
+
+		.footer-list {
+			&-item {
+				color: $clr-neutral-300;
+			}
+
+			:not(last-child) {
+				margin-bottom: 0.625rem;
 			}
 		}
 	}

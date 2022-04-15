@@ -64,14 +64,15 @@ ul {
 
 .lead {
   color: hsl(221deg, 12%, 35%);
+  margin-top: 1.25rem;
 }
-.lead .bold {
+
+.bold {
   font-weight: 500;
 }
 
 .m-heading {
   font-size: 2.1875rem;
-  margin-bottom: 1.25rem;
   line-height: 3.125rem;
 }
 
@@ -356,7 +357,59 @@ h6 {
   justify-content: space-between;
   align-items: center;
   padding: 3.65625rem 4.375rem;
+  background-color: hsl(0deg, 0%, 100%);
+  transform: translateY(50%);
 }
 .subscribe-container .subscribe-text .m-heading {
   max-width: 16ch;
+}
+
+.footer {
+  background-color: hsl(0deg, 0%, 97%);
+  padding-block: 6.25rem;
+}
+.footer-container {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: flex-start;
+  justify-items: flex-end;
+  grid-gap: 3rem;
+}
+.footer-container *:first-child {
+  justify-self: flex-start;
+}
+.footer-container .sns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  margin-block: 1.875rem;
+}
+.footer-container .sns .sns-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 2.1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.footer-container .sns .sns-link i {
+  color: hsl(0deg, 90%, 59%);
+}
+.footer-container .copyright {
+  color: hsl(219deg, 12%, 72%);
+}
+.footer-container .footer-heading {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+.footer-container .footer-list-item {
+  color: hsl(221deg, 12%, 35%);
+}
+.footer-container .footer-list :not(last-child) {
+  margin-bottom: 0.625rem;
 }/*# sourceMappingURL=main.css.map */
