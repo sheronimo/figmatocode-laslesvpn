@@ -132,7 +132,7 @@ h6 {
 	background: linear-gradient(
 		0deg,
 		hsla(0, 0%, 97%, 0) 0%,
-		hsl(0, 0%, 97%) 100%
+		$clr-neutral-900 100%
 	);
 }
 
@@ -148,9 +148,6 @@ h6 {
 		.plan {
 			height: 47.5rem;
 			width: 100%;
-			background-color: $clr-neutral-1000;
-			border: 2px solid $clr-neutral-800;
-			border-radius: 10px;
 			padding: 3.125rem;
 			@include flex($justify: flex-start);
 			flex-direction: column;
@@ -186,10 +183,6 @@ h6 {
 				}
 			}
 		}
-
-		.plan-active {
-			border-color: $clr-secondary;
-		}
 	}
 }
 
@@ -207,5 +200,79 @@ h6 {
 
 	&-container {
 		@include flex($justify: space-between);
+	}
+}
+
+// Testimonials
+.testimonials {
+	margin-block: 7.75rem;
+	overflow-x: hidden;
+
+	.testimonial-cards {
+		margin-top: 3.75rem;
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 25rem;
+		grid-gap: 3.125rem;
+
+		.testimonial {
+			padding: 1.875rem;
+
+			.testimonial-head {
+				margin-bottom: 1.25rem;
+				@include flex($justify: flex-start);
+				gap: 1.25rem;
+
+				.name {
+					font-size: 1.125rem;
+					font-weight: $fw-500;
+				}
+
+				.location {
+					font-size: 0.875rem;
+					color: $clr-neutral-300;
+				}
+
+				.rating {
+					margin-left: auto;
+					@include flex;
+					gap: 0.6875rem;
+				}
+			}
+		}
+	}
+
+	.slider-controls {
+		margin-top: 3.75rem;
+		@include flex($justify: space-between);
+
+		.slider {
+			@include flex;
+			gap: 0.9375rem;
+
+			.circle {
+				width: 0.9375rem;
+				height: 0.9375rem;
+				background-color: $clr-neutral-800;
+				border-radius: 50%;
+			}
+
+			.circle-active {
+				width: 1.875rem;
+				border-radius: 1rem;
+			}
+		}
+
+		.slider-btn {
+			@include flex;
+			display: inline-flex;
+			padding: 1.25rem;
+			aspect-ratio: 1;
+			border-radius: 50%;
+
+			&:first-child {
+				margin-right: 1.25rem;
+			}
+		}
 	}
 }

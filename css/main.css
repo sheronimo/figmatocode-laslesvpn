@@ -23,7 +23,7 @@ ul {
 
 .container {
   max-width: 80rem;
-  margin: 0 auto;
+  margin-inline: auto;
   padding-inline: 2rem;
 }
 
@@ -31,6 +31,7 @@ ul {
   font-weight: 500;
   display: inline-block;
   cursor: pointer;
+  border: none;
   line-height: 1.185rem;
   padding-inline: 3.93375rem;
   padding-block: 0.8125rem;
@@ -84,6 +85,16 @@ ul {
 }
 .checklist :not(last-child) {
   margin-bottom: 0.9375rem;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(0deg, 0%, 87%);
+  border-radius: 10px;
+}
+
+.card-active {
+  border-color: hsl(0deg, 90%, 59%);
 }
 
 body {
@@ -223,9 +234,6 @@ h6 {
 .plans .plan-items .plan {
   height: 47.5rem;
   width: 100%;
-  background-color: hsl(0deg, 0%, 100%);
-  border: 2px solid hsl(0deg, 0%, 87%);
-  border-radius: 10px;
   padding: 3.125rem;
   display: flex;
   justify-content: flex-start;
@@ -256,9 +264,6 @@ h6 {
 .plans .plan-items .plan .plan-bottom .price .month {
   font-weight: 400;
 }
-.plans .plan-items .plan-active {
-  border-color: hsl(0deg, 90%, 59%);
-}
 
 .network .globe {
   margin-inline: auto;
@@ -272,4 +277,75 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.testimonials {
+  margin-block: 7.75rem;
+  overflow-x: hidden;
+}
+.testimonials .testimonial-cards {
+  margin-top: 3.75rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25rem;
+  grid-gap: 3.125rem;
+}
+.testimonials .testimonial-cards .testimonial {
+  padding: 1.875rem;
+}
+.testimonials .testimonial-cards .testimonial .testimonial-head {
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+}
+.testimonials .testimonial-cards .testimonial .testimonial-head .name {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.testimonials .testimonial-cards .testimonial .testimonial-head .location {
+  font-size: 0.875rem;
+  color: hsl(221deg, 12%, 35%);
+}
+.testimonials .testimonial-cards .testimonial .testimonial-head .rating {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6875rem;
+}
+.testimonials .slider-controls {
+  margin-top: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .slider-controls .slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+}
+.testimonials .slider-controls .slider .circle {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: hsl(0deg, 0%, 87%);
+  border-radius: 50%;
+}
+.testimonials .slider-controls .slider .circle-active {
+  width: 1.875rem;
+  border-radius: 1rem;
+}
+.testimonials .slider-controls .slider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  padding: 1.25rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.testimonials .slider-controls .slider-btn:first-child {
+  margin-right: 1.25rem;
 }/*# sourceMappingURL=main.css.map */

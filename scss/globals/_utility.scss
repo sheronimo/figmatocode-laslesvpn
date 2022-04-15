@@ -1,6 +1,6 @@
 .container {
 	max-width: $max-width;
-	margin: 0 auto;
+	margin-inline: auto;
 	padding-inline: 2rem;
 }
 
@@ -9,6 +9,7 @@
 	font-weight: $fw-500;
 	display: inline-block;
 	cursor: pointer;
+	border: none;
 	line-height: 1.185rem;
 	padding-inline: 3.93375rem;
 	padding-block: 0.8125rem;
@@ -64,4 +65,15 @@
 	:not(last-child) {
 		margin-bottom: 0.9375rem;
 	}
+}
+
+// Cards
+.card {
+	background-color: $clr-neutral-1000;
+	border: 2px solid $clr-neutral-800;
+	border-radius: 10px;
+}
+
+.card-active {
+	border-color: $clr-secondary;
 }
