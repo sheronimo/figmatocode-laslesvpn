@@ -19,6 +19,7 @@
 	color: $clr-neutral-1000;
 	background-color: $clr-secondary;
 	border-radius: 3.125rem;
+	box-shadow: 0 1.25rem 3.375rem hsla(0, 90%, 59%, 0.35);
 }
 
 .btn-outline {
@@ -34,6 +35,7 @@
 	padding-inline: 4.84375rem;
 	padding-block: 1.09375rem;
 	border-radius: 0.625rem;
+	box-shadow: 0 1.25rem 3.375rem hsla(0, 90%, 59%, 0.35);
 }
 
 // Text

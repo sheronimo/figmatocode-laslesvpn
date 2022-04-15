@@ -41,6 +41,7 @@ ul {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(0deg, 90%, 59%);
   border-radius: 3.125rem;
+  box-shadow: 0 1.25rem 3.375rem hsla(0deg, 90%, 59%, 0.35);
 }
 
 .btn-outline {
@@ -56,6 +57,7 @@ ul {
   padding-inline: 4.84375rem;
   padding-block: 1.09375rem;
   border-radius: 0.625rem;
+  box-shadow: 0 1.25rem 3.375rem hsla(0deg, 90%, 59%, 0.35);
 }
 
 .text-center {
@@ -170,6 +172,7 @@ h6 {
   justify-items: center;
   align-items: center;
   border-radius: 0.625rem;
+  box-shadow: 0 3rem 7.125rem hsla(234deg, 48%, 10%, 0.06);
 }
 .stats-container .stat {
   width: 100%;
@@ -359,6 +362,8 @@ h6 {
   padding: 3.65625rem 4.375rem;
   background-color: hsl(0deg, 0%, 100%);
   transform: translateY(50%);
+  border-radius: 0.625rem;
+  box-shadow: 0 3rem 7.125rem hsla(234deg, 48%, 10%, 0.06);
 }
 .subscribe-container .subscribe-text .m-heading {
   max-width: 16ch;
@@ -395,6 +400,7 @@ h6 {
   width: 2.1rem;
   aspect-ratio: 1;
   border-radius: 50%;
+  box-shadow: 0px 0.8125rem 1.125rem hsla(233deg, 35%, 10%, 0.08);
 }
 .footer-container .sns .sns-link i {
   color: hsl(0deg, 90%, 59%);
